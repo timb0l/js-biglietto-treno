@@ -4,10 +4,18 @@ function submitForm(event){
 
     let userFullName = document.getElementById("userFullName").value;
     let userKm = parseInt(document.getElementById("userKm").value);
-    let selectAge = parseInt(document.getElementById("underage").value);;
+    let selectAge = parseInt(document.getElementById("selectAge").value);;
 
     //ticket type
-        //???????????????
+        let typeTicket = selectAge(ordinary)
+            console.log("Ordinary Ticket")
+
+         if selectAge(minor)
+            console.log("Minor Discounted Ticket")
+        
+        else if selectAge(eldery)
+            console.log("Over 65 Discounted Ticket")
+        
     //wagon
         let wagon = Math.floor(Math.random() * 10) + 1;
         console.log(wagon)
