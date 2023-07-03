@@ -9,10 +9,10 @@ function submitForm(event){
     //ticket type
         //???????????????
     //wagon
-        let wagon = math.floor(math.random() * 10) + 1;
+        let wagon = Math.floor(Math.random() * 10) + 1;
         console.log(wagon)
     //CpCode
-         let randomCode = math.floor(math.random() * 99999) + 1;
+         let randomCode = Math.floor(Math.random() * 99999) + 1;
             console.log(randomCode)
     //ticketing
 
