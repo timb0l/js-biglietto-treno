@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Train Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+ </head>
+ 
+  <body class="bg-danger">
+    <!--first box-->
+        <h2 class="text-center text-white">ESTIMATE YOUR TICKET</h2>
+            <div class="container col-12 col-md-6 border bg-white rounded-2">
+                <form class="row gap-5 w-50 m-auto" onsubmit="submitForm(event)" id="UserForm">
+                   <!--name-->
+                    <div class="col-12 col-md-8 col-lg-3 mt-3">
+                    <p class="text-danger text-center mb-0">Full Name</p>
+                        <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" id="userFullName">
+                    </div>
+                    <!--km-->
+                    <div class="col-12 col-md-8 col-lg-3 mt-3">
+                    <p class="text-danger text-center mb-0">Km to go</p>
+                        <input type="text" class="form-control" placeholder="Km to go" aria-label="Km to go" id="userKm">
+                    </div>
+                    <!--age-->
+                    <div class="col-12 col-md-8 col-lg-3 text-center mt-3">
+                        <label for="selectAge" class="form-label text-danger mb-0">Age gap</label>
+                        <select id="selectAge" class="form-select">
+                            <option selected="-">Select Age</option>
+                            <option id="underage" value="0-17yo">0-17yo</option>
+                            <option id="ordinary" value="18-64yo">18-65yo</option>
+                            <option id="eldery" value="+65yo">+65yo</option>
+                        </select>
+                    </div>
+                    <!--submitbutton-->
+                    <div class="col-12 text-center mb-3">
+                        <button type="submit" class="btn btn-light btn-outline-warning text-danger" value="submit">Submit</button>
+                        <button type="cancel" class="btn btn-light btn-outline-dark text-danger" value="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+     <!--second box--> 
+        <h2 class="text-center text-white mt-3">YOUR TICKET</h2>
+            <div class="container col-12 col-md-6 border bg-white rounded-2">
+                <h3>Passenger Details</h3>
+                <div class="row mb-2 m-auto" id="containerTicket">
+                   
+                    <hr>
+                        <div class="col-3 bg-light" id="containerName">
+                            <h4>Passenger Name</h3>
+                        </div>
+
+                        <div class="row col-3 bg-light" id="typeTicket">
+                            <h5>Ticket</h5>
+                        </div>
+
+                        <div class="row col-2 bg-light" id="wagon">
+                            <h5>Wagon</h5>
+                        </div>
+
+                        <div class="row col-2 bg-light" id="randomCode">
+                            <h5>CP Code</h5>
+                        </div>
+
+                        <div class="row col-2 bg-light" id="ticketPrice">
+                            <h5>Ticket Price</h5>
+                        </div>
+                   
+                    <hr>
+             
+                </div>
+            </div>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+ </body>
+</html>
